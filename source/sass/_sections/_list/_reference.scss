@@ -1,0 +1,14 @@
+// リストの長さを取得
+.sampleClass {
+  /* $comma-listの長さ */
+  $length-comma: length($comma-list);
+  content: $length-comma;
+  /* $space-listの長さ */
+  $length-space: length($space-list);
+  content: $length-space;
+}
+/* 3番目の値を取得 */
+.sampleClass {
+  $nth: nth($comma-list, 3);
+  content: $nth;
+}

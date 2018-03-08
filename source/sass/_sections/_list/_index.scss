@@ -1,0 +1,4 @@
+.sampleClass {
+  $val-index: index($comma-list, green);
+  content: $val-index;
+}

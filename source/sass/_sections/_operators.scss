@@ -1,0 +1,12 @@
+/* ** Operators ** */
+.container {
+  width: 100%;
+
+  article {
+    width: 600px / 960px * 100%;
+  }
+
+  aside {
+    width: 360px / 960px * 100%;
+  }
+}

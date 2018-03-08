@@ -1,0 +1,4 @@
+.sampleClass {
+  $append-list: append($comma-list, append-value);
+  content: $append-list;
+}

@@ -1,0 +1,18 @@
+// 組み替え用の配列
+$size-list: 1px 2px 3px;
+$color-list: blue green gray;
+$style-list: solid dashed dotted;
+
+// 配列を組み替え
+.sampleClass {
+  $zipped-list: zip(
+    $size-list,
+    $color-list,
+    $style-list
+  );
+  content: $zipped-list;
+  /* 配列を1つずつ抽出 */
+  content: nth($zipped-list, 1);
+  content: nth($zipped-list, 2);
+  content: nth($zipped-list, 3);
+}

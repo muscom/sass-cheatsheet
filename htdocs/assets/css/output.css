@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* ** Variables ** */
+body {
+  background-color: #cccccc;
+}
+
+/* ** Variables ** */
+nav ul {
+  color: #ff0000;
+}
+
+nav li {
+  font-size: 16px;
+}
+
+/* ** Import ** */
+/* ** Partial ** */
+.partial {
+  font-size: 24px;
+}
+
+/* ** mixin ** */
+blockquote {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* ** @extend ** */
+.block, .block-note {
+  border: 3px solid #000000;
+  border-radius: 20px;
+}
+
+.block-note {
+  border-color: #cccccc;
+}
+
+/* ** Operators ** */
+.container {
+  width: 100%;
+}
+
+.container article {
+  width: 62.5%;
+}
+
+.container aside {
+  width: 37.5%;
+}
+
+/* ** Lists ** */
+/* 基本 */
+/* 配列の値の参照 */
+.sampleClass {
+  /* $comma-listの長さ */
+  content: 3;
+  /* $space-listの長さ */
+  content: 3;
+}
+
+/* 3番目の値を取得 */
+.sampleClass {
+  content: none;
+}
+
+/* 配列の操作 */
+/* n番目に新しい値をセットする */
+.sampleClass {
+  /* 元のリスト */
+  content: 10px, green, none;
+  /* 2番目に新しい値をセット */
+  content: 10px, blue, none;
+  /* 元のリストの値は変わらない */
+  content: 10px, green, none;
+}
+
+/* 配列の結合 */
+.sampleClass {
+  /* セパレーターの指定無し */
+  content: 10px, green, none, 10px, green, none;
+  /* セパレーターにカンマを指定 */
+  content: 10px, green, none, 10px, green, none;
+  /* セパレーターにスペースを指定 */
+  content: 10px green none 10px green none;
+}
+
+/* 配列への値の追加 */
+.sampleClass {
+  content: 10px, green, none, append-value;
+}
+
+/* 配列の組み替え */
+.sampleClass {
+  content: 1px blue solid, 2px green dashed, 3px gray dotted;
+  /* 配列を1つずつ抽出 */
+  content: 1px blue solid;
+  content: 2px green dashed;
+  content: 3px gray dotted;
+}
+
+/* 配列インデックスの参照 */
+.sampleClass {
+  content: 2;
+}
+
+/* Map */
+
+/*# sourceMappingURL=maps/output.css.map */

@@ -1,0 +1,24 @@
+/* ** @extend ** */
+
+// 継承用のルールセット
+%Block {
+  border: 3px solid #000000;
+  border-radius: 20px;
+}
+
+// 一度も使わないルールセットはCSSには出力されない
+%NoneUsedBlock {
+  border: 50px solid #ffffff;
+  border-radius: 10px;
+}
+
+// @extend
+.block {
+  @extend %Block;
+}
+
+// border-colorを上書きする
+.block-note {
+  @extend %Block;
+  border-color: #cccccc;
+}

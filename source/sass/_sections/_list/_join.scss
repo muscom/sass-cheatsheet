@@ -1,0 +1,11 @@
+.sampleClass {
+  /* セパレーターの指定無し */
+  $joined-list: join($comma-list, $space-list);
+  content: $joined-list;
+  /* セパレーターにカンマを指定 */
+  $comma-joined-list: join($comma-list, $space-list, comma);
+  content: $comma-joined-list;
+  /* セパレーターにスペースを指定 */
+  $space-joined-list: join($comma-list, $space-list, space);
+  content: $space-joined-list;
+}

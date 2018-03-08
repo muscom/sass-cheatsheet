@@ -1,0 +1,11 @@
+/* n番目に新しい値をセットする */
+.sampleClass{
+  /* 元のリスト */
+  $current-list: $comma-list;
+  content: $current-list;
+  /* 2番目に新しい値をセット */
+  $new-list: set-nth($comma-list, 2, blue);
+  content: $new-list;
+  /* 元のリストの値は変わらない */
+  content: $current-list;
+}
