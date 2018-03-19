@@ -2,10 +2,10 @@
 ## 変数 / Variables
 ### Sass
 ```Sass
-$primary-color: #cccccc;
+$primaly-color: #cccccc;
 
 body {
-  background-color: $primary-color;
+  background-color: $primaly-color;
 }
 ```
 ### CSS
